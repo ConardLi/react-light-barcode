@@ -1,4 +1,1 @@
-import Code from './component/Code';
-module.exports = {
-  Code
-}
+const Code = require('./component/Code')

@@ -2,7 +2,7 @@
   "name": "react-code128",
   "version": "1.0.0",
   "description": "code128条码react组件（简洁！轻量！）",
-  "main": "lib/index.js",
+  "main": "example/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

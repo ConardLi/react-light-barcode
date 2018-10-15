@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Code from '../src/index';
+import Code from './Code';
 
 ReactDOM.render(
   <Code />,
