@@ -1,1 +1,1 @@
-const Code = require('./component/Code')
+export { default as Code128 } from './component/Code128';
