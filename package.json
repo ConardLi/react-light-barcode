@@ -1,5 +1,5 @@
 {
-  "name": "react-code128",
+  "name": "react-light-barcode",
   "version": "1.0.1",
   "description": "条形码react组件,支持多种类型,按需引用（简洁！轻量！快速！）",
   "main": "example/index.js",
