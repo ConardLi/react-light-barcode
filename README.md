@@ -1,4 +1,4 @@
-# react-code128
+# react-light-barcode
 条形码react组件,支持多种类型,按需引用（简洁！轻量！快速！）
 
 条码规范非常多，引用一个库非常庞大，使用react-light-barcode可以灵活引入各种类型的条码，简洁、轻量、快速
