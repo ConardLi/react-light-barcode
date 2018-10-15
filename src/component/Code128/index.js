@@ -45,7 +45,7 @@ export default class Code128 extends React.Component {
 
   code128 = (code, barcodeType) => {
     const { displayValue, size, fontSize, fontColor } = this.props;
-    if (arguments.length < 2) barcodeType = this.code128Detect(code);
+    if (!barcodeType) barcodeType = this.code128Detect(code);
     if (barcodeType === 'C' && code.length % 2 === 1) code = `${code}`;
     const a = this.parseBarcode(code, barcodeType);
     return <div className='barcode' style={{ zoom: size }}>
