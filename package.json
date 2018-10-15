@@ -1,0 +1,27 @@
+{
+  "name": "react-code128",
+  "version": "1.0.0",
+  "description": "code128条码react组件（简洁！轻量！）",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConardLi/react-code128.git"
+  },
+  "keywords": [
+    "barcode",
+    "react"
+  ],
+  "author": "conardli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConardLi/react-code128/issues"
+  },
+  "homepage": "https://github.com/ConardLi/react-code128#readme",
+  "devDependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
