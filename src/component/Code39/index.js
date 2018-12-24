@@ -21,7 +21,7 @@ const fromType = {
   }
 };
 
-export default class Code128 extends React.Component {
+export default class Code39 extends React.Component {
 
   static propTypes = {
     value: PropTypes.string,
@@ -43,9 +43,9 @@ export default class Code128 extends React.Component {
     fontColor: 'black'
   }
 
-  code128 = (code, barcodeType) => {
+  code39 = (code, barcodeType) => {
     const { displayValue, size, fontSize, fontColor } = this.props;
-    if (!barcodeType) barcodeType = this.code128Detect(code);
+    if (!barcodeType) barcodeType = this.code139Detect(code);
     if (barcodeType === 'C' && code.length % 2 === 1) code = `${code}`;
     const a = this.parseBarcode(code, barcodeType);
     return <div className='barcode' style={{ zoom: size }}>
@@ -68,7 +68,7 @@ export default class Code128 extends React.Component {
     });
   }
 
-  code128Detect = (code) => {
+  code39Detect = (code) => {
     if (/^[0-9]+$/.test(code)) return 'C';
     if (/[a-z]/.test(code)) return 'B';
     return 'A';
@@ -96,7 +96,7 @@ export default class Code128 extends React.Component {
     const { value, type } = this.props;
     return (
       <div>
-        {this.code128(value, type)}
+        {this.code39(value, type)}
       </div>
     );
   }
